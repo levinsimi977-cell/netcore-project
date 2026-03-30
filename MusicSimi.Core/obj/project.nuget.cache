@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZfRO6zTgKco=",
+  "success": true,
+  "projectFilePath": "D:\\notecore\\ח אדר\\יא אדר\\MusicSimi\\MusicSimi.Core\\MusicSimi.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'AutoMapper' 12.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
+      "projectPath": "D:\\notecore\\ח אדר\\יא אדר\\MusicSimi\\MusicSimi.Core\\MusicSimi.Core.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\notecore\\ח אדר\\יא אדר\\MusicSimi\\MusicSimi.Core\\MusicSimi.Core.csproj",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}

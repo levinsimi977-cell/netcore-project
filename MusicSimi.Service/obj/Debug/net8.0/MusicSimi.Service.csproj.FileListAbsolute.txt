@@ -1,0 +1,63 @@
+T:\Group B\NetCore\סימי לוין\פרויקט\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.GeneratedMSBuildEditorConfig.editorconfig
+T:\Group B\NetCore\סימי לוין\פרויקט\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.AssemblyInfoInputs.cache
+T:\Group B\NetCore\סימי לוין\פרויקט\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.AssemblyInfo.cs
+T:\Group B\NetCore\סימי לוין\פרויקט\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.csproj.CoreCompileInputs.cache
+T:\Group B\NetCore\סימי לוין\פרויקט\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.sourcelink.json
+T:\Group B\NetCore\סימי לוין\פרויקט\MusicSimi\MusicSimi.Service\bin\Debug\net8.0\MusicSimi.Service.deps.json
+T:\Group B\NetCore\סימי לוין\פרויקט\MusicSimi\MusicSimi.Service\bin\Debug\net8.0\MusicSimi.Service.dll
+T:\Group B\NetCore\סימי לוין\פרויקט\MusicSimi\MusicSimi.Service\bin\Debug\net8.0\MusicSimi.Service.pdb
+T:\Group B\NetCore\סימי לוין\פרויקט\MusicSimi\MusicSimi.Service\bin\Debug\net8.0\MusicSimi.Core.dll
+T:\Group B\NetCore\סימי לוין\פרויקט\MusicSimi\MusicSimi.Service\bin\Debug\net8.0\MusicSimi.Core.pdb
+T:\Group B\NetCore\סימי לוין\פרויקט\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.csproj.AssemblyReference.cache
+T:\Group B\NetCore\סימי לוין\פרויקט\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSim.3593394B.Up2Date
+T:\Group B\NetCore\סימי לוין\פרויקט\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.dll
+T:\Group B\NetCore\סימי לוין\פרויקט\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\refint\MusicSimi.Service.dll
+T:\Group B\NetCore\סימי לוין\פרויקט\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.pdb
+T:\Group B\NetCore\סימי לוין\פרויקט\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\ref\MusicSimi.Service.dll
+T:\Group B\NetCore\סימי לוין\ז אדר\MusicSimi\MusicSimi.Service\bin\Debug\net8.0\MusicSimi.Service.deps.json
+T:\Group B\NetCore\סימי לוין\ז אדר\MusicSimi\MusicSimi.Service\bin\Debug\net8.0\MusicSimi.Service.dll
+T:\Group B\NetCore\סימי לוין\ז אדר\MusicSimi\MusicSimi.Service\bin\Debug\net8.0\MusicSimi.Service.pdb
+T:\Group B\NetCore\סימי לוין\ז אדר\MusicSimi\MusicSimi.Service\bin\Debug\net8.0\MusicSimi.Core.dll
+T:\Group B\NetCore\סימי לוין\ז אדר\MusicSimi\MusicSimi.Service\bin\Debug\net8.0\MusicSimi.Core.pdb
+T:\Group B\NetCore\סימי לוין\ז אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.csproj.AssemblyReference.cache
+T:\Group B\NetCore\סימי לוין\ז אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.GeneratedMSBuildEditorConfig.editorconfig
+T:\Group B\NetCore\סימי לוין\ז אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.AssemblyInfoInputs.cache
+T:\Group B\NetCore\סימי לוין\ז אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.AssemblyInfo.cs
+T:\Group B\NetCore\סימי לוין\ז אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.csproj.CoreCompileInputs.cache
+T:\Group B\NetCore\סימי לוין\ז אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.sourcelink.json
+T:\Group B\NetCore\סימי לוין\ז אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSim.3593394B.Up2Date
+T:\Group B\NetCore\סימי לוין\ז אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.dll
+T:\Group B\NetCore\סימי לוין\ז אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\refint\MusicSimi.Service.dll
+T:\Group B\NetCore\סימי לוין\ז אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.pdb
+T:\Group B\NetCore\סימי לוין\ז אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\ref\MusicSimi.Service.dll
+D:\notecore\ח אדר\ז אדר\MusicSimi\MusicSimi.Service\bin\Debug\net8.0\MusicSimi.Service.deps.json
+D:\notecore\ח אדר\ז אדר\MusicSimi\MusicSimi.Service\bin\Debug\net8.0\MusicSimi.Service.dll
+D:\notecore\ח אדר\ז אדר\MusicSimi\MusicSimi.Service\bin\Debug\net8.0\MusicSimi.Service.pdb
+D:\notecore\ח אדר\ז אדר\MusicSimi\MusicSimi.Service\bin\Debug\net8.0\MusicSimi.Core.dll
+D:\notecore\ח אדר\ז אדר\MusicSimi\MusicSimi.Service\bin\Debug\net8.0\MusicSimi.Core.pdb
+D:\notecore\ח אדר\ז אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.csproj.AssemblyReference.cache
+D:\notecore\ח אדר\ז אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\notecore\ח אדר\ז אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.AssemblyInfoInputs.cache
+D:\notecore\ח אדר\ז אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.AssemblyInfo.cs
+D:\notecore\ח אדר\ז אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.csproj.CoreCompileInputs.cache
+D:\notecore\ח אדר\ז אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSim.3593394B.Up2Date
+D:\notecore\ח אדר\ז אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.dll
+D:\notecore\ח אדר\ז אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\refint\MusicSimi.Service.dll
+D:\notecore\ח אדר\ז אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.pdb
+D:\notecore\ח אדר\ז אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\ref\MusicSimi.Service.dll
+D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi.Service\bin\Debug\net8.0\MusicSimi.Service.deps.json
+D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi.Service\bin\Debug\net8.0\MusicSimi.Service.dll
+D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi.Service\bin\Debug\net8.0\MusicSimi.Service.pdb
+D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi.Service\bin\Debug\net8.0\MusicSimi.Core.dll
+D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi.Service\bin\Debug\net8.0\MusicSimi.Core.pdb
+D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.csproj.AssemblyReference.cache
+D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.AssemblyInfoInputs.cache
+D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.AssemblyInfo.cs
+D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.csproj.CoreCompileInputs.cache
+D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.sourcelink.json
+D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSim.3593394B.Up2Date
+D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.dll
+D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\refint\MusicSimi.Service.dll
+D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\MusicSimi.Service.pdb
+D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi.Service\obj\Debug\net8.0\ref\MusicSimi.Service.dll
