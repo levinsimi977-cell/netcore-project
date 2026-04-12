@@ -22,22 +22,19 @@ namespace MusicSimi.Data.Repositories
                     return await _context.Teachers.ToListAsync();
 
         }
-
-    public async Task<Teachers> GetByIdAsync(int id)
-    {
-            var teacher = await _context.Teachers.FirstOrDefaultAsync(t => t.id == id); if (teacher != null)
+        public async Task<Teachers> GetByIdAsync(int id)
         {
-            return teacher;
+            return await _context.Teachers.FirstOrDefaultAsync(t => t.id == id);
         }
-        return null;
 
-    }
+       
     public async Task AddTeacherAsync(Teachers t)
     {
           var existingTeacher =await _context.Teachers.FirstOrDefaultAsync(t1 => t1.id == t.id);
-            if (existingTeacher != null)
+            if (existingTeacher == null)
             {
                 _context.Teachers.Add(t);
+
              }
        
     }
@@ -61,6 +58,7 @@ namespace MusicSimi.Data.Repositories
             _context.Teachers.Remove(teacher);
         }
     }
+       
         public async Task SaveAsync()
         {
            await _context.SaveChangesAsync();

@@ -16,6 +16,8 @@ namespace MusicSimi.Core
             CreateMap<Students, StudentDTO>().ReverseMap();
             CreateMap<Lessons,LessonDTO>().ReverseMap();
             CreateMap<Teachers, TeacherDTO>().ReverseMap();
+            CreateMap<TimeSpan, TimeOnly>().ConvertUsing(ts => TimeOnly.FromTimeSpan(ts));
+            CreateMap<TimeOnly, TimeSpan>().ConvertUsing(to => to.ToTimeSpan());
 
         }
     }

@@ -6,9 +6,8 @@ namespace MusicSimi.Models
     {
         public string name { get; set; }
         public int day { get; set; }
-        public TimeOnly start { get; set; }
-        public TimeOnly end { get; set; }
-        public TeacherPostModel teachers { get; set; }
-
+        public TimeSpan start { get; set; }
+        public TimeSpan end { get; set; }
+        public int teacherId { get; set; } 
     }
 }

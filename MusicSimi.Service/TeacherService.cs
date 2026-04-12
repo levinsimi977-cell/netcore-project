@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MusicSimi.Service
 {
-    public class TeacherService:ITeacherService
+    public class TeacherService : ITeacherService
     {
         private readonly ITeacherRepository _teacherRepository;
         public TeacherService(ITeacherRepository teacherRepository)
@@ -21,15 +21,16 @@ namespace MusicSimi.Service
         {
             return await _teacherRepository.GetAllAsync();
         }
+        // הפונקציה הזו צריכה לקרוא ל-GetByIdAsync שיצרנו ב-Repository
         public async Task<Teachers> GetByIdAsync(int id)
         {
-            var teacher =await _teacherRepository.GetByIdAsync(id);
-            if (teacher != null)
-            {
-                return teacher;
-            }
-            return null;
+            return await _teacherRepository.GetByIdAsync(id);
+        }
 
+        // וגם הפונקציה הזו (אם היא מופיעה ב-Interface)
+        public async Task<Teachers> GetByIdAsyncOrDefault(int id)
+        {
+            return await _teacherRepository.GetByIdAsync(id);
         }
 
         public async Task AddTeacherAsync(Teachers s)

@@ -25,13 +25,26 @@ namespace MusicSimi.Data.Repositories
 
         public async Task AddLessonsAsync(Lessons newL)
         {
-            var stu =await _context.Lessons.FirstAsync(s => s.id == newL.id);
-            if (stu == null)
+            // במקום לגשת ל-newL.teachers.id (שזורק שגיאה), נשתמש בשדה ה-ID הישיר
+            // במידה והשדה בישות נקרא teacherId (באות קטנה או גדולה לפי ה-Entity שלך)
+            var tId = newL.teacherId;
+
+            // חיפוש המורה בבסיס הנתונים
+            var existingTeacher = await _context.Teachers.FindAsync(tId);
+
+            if (existingTeacher != null)
             {
-               
-                _context.Lessons.Add(newL);
+                // שיוך השיעור למורה הקיימת
+                newL.teachers = existingTeacher;
+            }
+            else
+            {
+                // אם לא נמצא מורה (למשל שלחת ID שלא קיים), כדאי לטפל בזה או לזרוק שגיאה
+                throw new Exception($"Teacher with ID {tId} not found.");
             }
 
+            _context.Lessons.Add(newL);
+            await _context.SaveChangesAsync();
         }
         public async Task UpdateLessonsAsync(Lessons updateL, int id)
         {

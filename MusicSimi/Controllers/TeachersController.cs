@@ -67,14 +67,13 @@ namespace MusicSimi.Controllers
             var User = await _userService.AddUserAsync(user);
             var newCastomer = _mapper.Map<Teachers>(t);
             newCastomer.user = User;
-            newCastomer.id = User.Id;
             var Castomer = await _teachersService.GetByIdAsync(newCastomer.id);
             if (Castomer != null)
             {
                 return Conflict();
             }
             await _teachersService.AddTeacherAsync(newCastomer);
-            return Ok(); ;
+            return Ok(); 
 
 
 

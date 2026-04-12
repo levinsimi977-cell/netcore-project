@@ -40,32 +40,33 @@ namespace MusicSimi.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] LessonPostModel newL)
         {
-            var lessons = new Lessons();
-            lessons = _mapper.Map<Lessons>(newL);
+            var lesson = _mapper.Map<Lessons>(newL);
 
-            await _lessonService.AddLessonsAsync(lessons);
+            lesson.teacherId = newL.teacherId;
+
+            await _lessonService.AddLessonsAsync(lesson);
             return Ok(newL);
-
         }
         // PUT api/<LessonsController>/5
         [HttpPut("{id}")]
         public async Task<IActionResult> Put(int id, [FromBody] LessonPostModel updateL)
         {
             var lessons = await _lessonService.GetAllAsync();
-            var lesson = lessons.FirstOrDefault(l => l.id == id);
-            if (lesson == null)
+            var lessonEntity = lessons.FirstOrDefault(l => l.id == id);
+
+            if (lessonEntity == null)
             {
                 return NotFound();
             }
-            lesson.name = updateL.name;
-            lesson.day = updateL.day;
-            lesson.start = updateL.start;
-            lesson.end = updateL.end;
-            await _lessonService.UpdateLessonsAsync(lesson, id);
+
+            _mapper.Map(updateL, lessonEntity);
+
+            lessonEntity.teacherId = updateL.teacherId;
+
+            await _lessonService.UpdateLessonsAsync(lessonEntity, id);
 
             return Ok();
         }
-        // DELETE api/<LessonsController>/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
