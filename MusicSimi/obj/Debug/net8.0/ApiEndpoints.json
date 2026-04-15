@@ -89,6 +89,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "MusicSimi.Controllers.LessonsController",
+    "Method": "RegisterStudent",
+    "RelativePath": "api/Lessons/{lessonId}/register/{studentId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lessonId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "studentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "MusicSimi.Controllers.StudentsController",
     "Method": "Get",
     "RelativePath": "api/Students",

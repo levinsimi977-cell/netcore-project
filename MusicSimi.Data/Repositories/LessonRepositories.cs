@@ -71,5 +71,14 @@ namespace MusicSimi.Data.Repositories
         {
             await _context.SaveChangesAsync();
         }
+        public async Task<Lessons> GetByIdAsync(int id)
+        {
+            return await _context.Lessons.Include(l => l.students).FirstOrDefaultAsync(l => l.id == id);
+        }
+
+        public async Task UpdateAsync(Lessons lesson)
+        {
+            _context.Lessons.Update(lesson);
+        }
     }
 }

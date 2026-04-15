@@ -15,6 +15,8 @@ namespace MusicSimi.Core.Repositories
         public Task UpdateLessonsAsync(Lessons lessons,int id);
         public Task DeleteLessonsAsync(int id);
         public Task SaveAsync();
+       public Task<Lessons> GetByIdAsync(int id); // <--- להוסיף את זה
+       public Task UpdateAsync(Lessons lesson); // <--- להוסיף את זה עבור הרישום
 
     }
 }

@@ -14,8 +14,10 @@ namespace MusicSimi.Service
     {
        
             private readonly ILessonsRepository _lessonRepository;
-            public LessonService(ILessonsRepository lessonRepository)
+        private readonly IStudentRepository _studentRepository; 
+        public LessonService(ILessonsRepository lessonRepository, IStudentRepository studentRepository)
             {
+            _studentRepository = studentRepository; // 3. אתחול המשתנה
             _lessonRepository = lessonRepository;
             }
 
@@ -23,8 +25,28 @@ namespace MusicSimi.Service
             {
                 return await _lessonRepository.GetAllAsync();
             }
+        public async Task RegisterStudentToLessonAsync(int lessonId, int studentId)
+        {
 
-            public async Task AddLessonsAsync(Lessons newL)
+            // שליפת השיעור והתלמיד (וודאי שיש לך גישה ל-IStudentRepository או לשירות התלמידים)
+            var lesson = await _lessonRepository.GetByIdAsync(lessonId);
+            var student = await _studentRepository.GetByIdAsync(studentId);
+
+            if (lesson != null && student != null)
+            {
+                // הוספת התלמיד לרשימת התלמידים של השיעור
+                if (lesson.students == null) lesson.students = new List<Students>();
+
+                lesson.students.Add(student);
+                await _lessonRepository.UpdateAsync(lesson); // שמירה בדאטה-בייס
+            }
+            else
+            {
+                throw new Exception("שיעור או תלמיד לא נמצאו");
+            }
+        }
+
+        public async Task AddLessonsAsync(Lessons newL)
             {
                 //var stu =await _lessonRepository.find(s => s.id == newL.id);
                 //if (stu == null)

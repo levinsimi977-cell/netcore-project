@@ -78,5 +78,19 @@ namespace MusicSimi.Controllers
             await _lessonService.DeleteLessonsAsync(id);
             return Ok();
         }
+        // POST api/Lessons/{lessonId}/register/{studentId}
+        [HttpPost("{lessonId}/register/{studentId}")]
+        public async Task<IActionResult> RegisterStudent(int lessonId, int studentId)
+        {
+            try
+            {
+                await _lessonService.RegisterStudentToLessonAsync(lessonId, studentId);
+                return Ok(new { message = "התלמיד נרשם בהצלחה לשיעור!" });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
+        }
     }
 }

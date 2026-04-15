@@ -14,5 +14,6 @@ namespace MusicSimi.Core.Serivecs
         public Task AddLessonsAsync(Lessons lessons);
         public Task UpdateLessonsAsync(Lessons lessons,int id);
         public Task DeleteLessonsAsync(int id);
+        Task RegisterStudentToLessonAsync(int lessonId, int studentId);
     }
 }

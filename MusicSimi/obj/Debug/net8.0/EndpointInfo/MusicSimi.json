@@ -166,6 +166,38 @@
         }
       }
     },
+    "/api/Lessons/{lessonId}/register/{studentId}": {
+      "post": {
+        "tags": [
+          "Lessons"
+        ],
+        "parameters": [
+          {
+            "name": "lessonId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "studentId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Students": {
       "get": {
         "tags": [

@@ -33,7 +33,8 @@ namespace MusicSimi.Controllers
                 var claims = new List<Claim>()
             {
                 new Claim(ClaimTypes.Name, user.name),
-                new Claim(ClaimTypes.Role, user.Role.ToString())
+                new Claim(ClaimTypes.Role, user.Role.ToString()),
+                new Claim("userId", user.Id.ToString()) 
             };
                 var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:Key"]));
                 var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
