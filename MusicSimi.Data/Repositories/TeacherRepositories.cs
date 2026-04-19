@@ -19,8 +19,9 @@ namespace MusicSimi.Data.Repositories
         }
         public async Task<List<Teachers>> GetAllAsync()
         {
-                    return await _context.Teachers.ToListAsync();
-
+            return await _context.Teachers
+                    .Include(t => t.user)
+                    .ToListAsync();
         }
         public async Task<Teachers> GetByIdAsync(int id)
         {

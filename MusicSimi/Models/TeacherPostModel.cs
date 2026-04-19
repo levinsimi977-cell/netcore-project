@@ -2,6 +2,8 @@
 {
     public class TeacherPostModel
     {
+        public int id { get; set; }       
+        public int userId { get; set; }
         public string password { get; set; }
         public string name { get; set; }
         public int age { get; set; }

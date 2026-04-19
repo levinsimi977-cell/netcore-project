@@ -23,6 +23,10 @@ namespace MusicSimi.Service
         {
             return await _studentRepository.GetAllAsync();
         }
+        public async Task<List<Lessons>> GetLessonsByStudentIdAsync(int studentId)
+        {
+            return await _studentRepository.GetStudentLessonsAsync(studentId);
+        }
         public async Task<Students> GetByIdAsync(int id)
         {
             var student = await _studentRepository.GetByIdAsync(id);

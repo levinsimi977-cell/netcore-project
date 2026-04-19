@@ -2,6 +2,8 @@
 {
     public class StudentPostModel
     {
+        public int id { get; set; }       // ה-ID של המורה (למשל 8)
+        public int userId { get; set; }   // ה-ID של המשתמש (למשל 22)
 
         public string name { get; set; }
         public string password { get; set; }

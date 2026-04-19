@@ -17,16 +17,27 @@ namespace MusicSimi.Data.Repositories
         {
             _context = context;
         }
+        public async Task<List<Lessons>> GetStudentLessonsAsync(int studentId)
+        {
+            return await _context.Lessons
+                .Include(l => l.teachers) .Include(l => l.students)
+                .Where(l => l.students.Any(s =>  s.user.Id == studentId))
+        .ToListAsync();
+        }
+
         public async Task<List<Students>> GetAllAsync()
         {
 
-            return await _context.Students.ToListAsync();
+            return await _context.Students
+        .Include(s => s.user)
+        .ToListAsync();
         }
 
         public async Task<Students> GetByIdAsync(int id)
         {
-            return await _context.Students.FirstAsync(s => s.id == id);
-
+            return await _context.Students
+                    .Include(s => s.lessons) // טעינת השיעורים המקושרים
+                    .FirstOrDefaultAsync(s => s.id == id);
         }
         public async Task AddStudentAsync(Students s)
         {

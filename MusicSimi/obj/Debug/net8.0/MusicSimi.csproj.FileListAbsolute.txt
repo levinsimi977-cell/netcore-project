@@ -598,7 +598,6 @@ D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\bin\Debug\net8.0\MusicSimi
 D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\bin\Debug\net8.0\MusicSimi.Service.pdb
 D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\bin\Debug\net8.0\MusicSimi.Core.pdb
 D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\MusicSimi.csproj.AssemblyReference.cache
-D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\rpswa.dswa.cache.json
 D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\MusicSimi.GeneratedMSBuildEditorConfig.editorconfig
 D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\MusicSimi.AssemblyInfoInputs.cache
 D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\MusicSimi.AssemblyInfo.cs
@@ -606,12 +605,8 @@ D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\MusicSimi
 D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\MusicSimi.MvcApplicationPartsAssemblyInfo.cs
 D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\MusicSimi.MvcApplicationPartsAssemblyInfo.cache
 D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\MusicSimi.sourcelink.json
-D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\rjimswa.dswa.cache.json
-D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
-D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
 D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\scopedcss\bundle\MusicSimi.styles.css
 D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\staticwebassets.build.json
-D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\staticwebassets.build.json.cache
 D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\staticwebassets.development.json
 D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
@@ -621,3 +616,8 @@ D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\refint\Mu
 D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\MusicSimi.pdb
 D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\MusicSimi.genruntimeconfig.cache
 D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\ref\MusicSimi.dll
+D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\notecore\ח אדר\יא אדר\MusicSimi\MusicSimi\obj\Debug\net8.0\staticwebassets.build.json.cache

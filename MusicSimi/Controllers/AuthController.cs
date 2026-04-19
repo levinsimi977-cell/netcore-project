@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using MusicSimi.Core.Serivecs;
 using MusicSimi.Models;
+using MusicSimi.Service;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -15,13 +16,14 @@ namespace MusicSimi.Controllers
     {
         private readonly IConfiguration _configuration;
         private readonly IUserService _userService;
+        private readonly IStudentServics _studentService;
 
 
-        public AuthController(IConfiguration configuration, IUserService userService)
+        public AuthController(IConfiguration configuration, IUserService userService, IStudentServics studentService)
         {
             _configuration = configuration;   
             _userService = userService;
-
+                        _studentService = studentService;
         }
 
         [HttpPost]
@@ -31,11 +33,14 @@ namespace MusicSimi.Controllers
             if (user != null)
             {
                 var claims = new List<Claim>()
-            {
-                new Claim(ClaimTypes.Name, user.name),
-                new Claim(ClaimTypes.Role, user.Role.ToString()),
-                new Claim("userId", user.Id.ToString()) 
-            };
+                {
+
+                    new Claim("unique_name", user.name), // שם המשתמש
+                    new Claim("role", user.Role.ToString()), // תפקיד במפתח פשוט
+                    new Claim("userId", user.Id.ToString()) // מזהה המשתמש
+
+                 };
+               
                 var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:Key"]));
                 var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
                 var tokeOptions = new JwtSecurityToken(

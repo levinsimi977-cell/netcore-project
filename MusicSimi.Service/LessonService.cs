@@ -27,25 +27,23 @@ namespace MusicSimi.Service
             }
         public async Task RegisterStudentToLessonAsync(int lessonId, int studentId)
         {
-
-            // שליפת השיעור והתלמיד (וודאי שיש לך גישה ל-IStudentRepository או לשירות התלמידים)
             var lesson = await _lessonRepository.GetByIdAsync(lessonId);
             var student = await _studentRepository.GetByIdAsync(studentId);
 
             if (lesson != null && student != null)
             {
-                // הוספת התלמיד לרשימת התלמידים של השיעור
                 if (lesson.students == null) lesson.students = new List<Students>();
 
-                lesson.students.Add(student);
-                await _lessonRepository.UpdateAsync(lesson); // שמירה בדאטה-בייס
+                if (!lesson.students.Any(s => s.id == studentId))
+                {
+                    lesson.students.Add(student);
+                    // אין צורך לקרוא ל-UpdateLessonsAsync! 
+                    // ה-EF כבר יודע שה-lesson השתנה כי הוא עוקב אחריו.
+                    await _lessonRepository.SaveAsync();
+                }
             }
-            else
-            {
-                throw new Exception("שיעור או תלמיד לא נמצאו");
-            }
+            else { throw new Exception("שיעור או תלמיד לא נמצאו"); }
         }
-
         public async Task AddLessonsAsync(Lessons newL)
             {
                 //var stu =await _lessonRepository.find(s => s.id == newL.id);

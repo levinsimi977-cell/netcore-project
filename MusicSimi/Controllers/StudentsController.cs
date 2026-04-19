@@ -52,6 +52,23 @@ namespace MusicSimi.Controllers
             return sDTO;
 
         }
+        [HttpGet("my-lessons")]
+        public async Task<ActionResult<IEnumerable<LessonDTO>>> GetMyLessons()
+        {
+            // שליפת ה-ID של הסטודנט מה-Token
+            var userIdClaim = User.FindFirst("userId")?.Value;
+            if (string.IsNullOrEmpty(userIdClaim)) return Unauthorized();
+
+            int studentId = int.Parse(userIdClaim);
+
+            // קריאה לשירות שמפעיל את ה-Repository המעודכן שלך
+            var lessons = await _studentService.GetLessonsByStudentIdAsync(studentId);
+
+            // מיפוי ל-DTO כדי ש-Lovable יבין את המבנה
+            var lessonsDto = _mapper.Map<List<LessonDTO>>(lessons);
+
+            return Ok(lessonsDto);
+        }
 
         // POST api/<StudentsController>
         [HttpPost]

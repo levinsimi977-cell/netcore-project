@@ -10,7 +10,7 @@ namespace MusicSimi.Core.Repositories
     public interface IStudentRepository
     {
         public Task<List<Students>> GetAllAsync();
-
+        public Task<List<Lessons>> GetStudentLessonsAsync(int studentId);
         public Task<Students> GetByIdAsync(int id);
         public Task AddStudentAsync(Students student);
         public Task UpdateStudentAsync(Students student, int id);

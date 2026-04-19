@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MusicSimi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de7ea68293ad21db2808edbebdbfa6dc67d9e55b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7a4583e76a6cd37da15accbb1dc2210944abbc4")]
 [assembly: System.Reflection.AssemblyProductAttribute("MusicSimi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MusicSimi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
